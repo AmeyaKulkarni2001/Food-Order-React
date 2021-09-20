@@ -1,8 +1,8 @@
 import {Fragment} from 'react';
 
-import meals from '../../assets/meals.jpg';
 import classes from './Header.module.css';
-import Button from './HeaderCartButton'
+import Button from './HeaderCartButton';
+import Image from './Image';
 
 const Header = props =>{
     return <Fragment>
@@ -10,9 +10,7 @@ const Header = props =>{
             <h1>Meals</h1>
             <Button/>
         </header>
-        <div className ={classes['main-image']}>
-            <img src={meals} alt="Food"/>
-        </div>
+        <Image />
     </Fragment>
 };
 
