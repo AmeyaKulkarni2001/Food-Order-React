@@ -13,7 +13,7 @@ const AvailableMeals = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       console.log(process.env);
-      const res = await fetch(process.env.REACT_APP_LINK);
+      const res = await fetch(process.env.REACT_APP_GET);
       if (!res.ok) {
         throw new Error("something went wrong");
       }
